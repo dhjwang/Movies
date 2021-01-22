@@ -8,11 +8,11 @@ import Search from './components/Search'
 function App() {
   return (
     <CheckoutProvider>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
           <Header />
           <Switch>
-              <Route exact path='/' component={Search} />
-              <Route path='/checkout' component={Checkout} />
+              <Route exact path={`${process.env.PUBLIC_URL}/`} component={Search} />
+              <Route path={`${process.env.PUBLIC_URL}/checkout`} component={Checkout} />
           </Switch>      
       </Router>
     </CheckoutProvider>
