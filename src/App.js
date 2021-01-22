@@ -8,7 +8,7 @@ import Search from './components/Search'
 function App() {
   return (
     <CheckoutProvider>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
           <Header />
           <Switch>
               <Route exact path='/' component={Search} />
