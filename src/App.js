@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {HashRouter as Router, Switch, Route} from 'react-router-dom';
 import {CheckoutProvider} from './components/CheckoutContext'
 import Header from './components/Header'
 import Checkout from './components/Checkout'
@@ -11,8 +11,8 @@ function App() {
       <Router>
           <Header />
           <Switch>
-              <Route exact path={`${process.env.PUBLIC_URL}/`} component={Search} />
-              <Route path={`${process.env.PUBLIC_URL}/checkout`} component={Checkout} />
+              <Route exact path= '/' component={Search} />
+              <Route path= '/checkout' component={Checkout} />
           </Switch>      
       </Router>
     </CheckoutProvider>
