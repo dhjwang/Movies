@@ -1,38 +1,97 @@
-.App {
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Search.js */
+.search {
+  background-color: rgb(65, 61, 58);
+  height:100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  min-height: 92vh;
+}
+
+form{
+  height:40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+}
+
+input{
+  width: 60vw;
+  height: 100%;
+  border: 1px solid rgb(126, 74, 74);
+  font-size: 16px;
+  padding: 4px;
+}
+
+button{
+  height:100%;
+  width:70px;
+  font-size: 16px;
+  border: 1px solid rgb(126, 74, 74);
+  background: rgb(184, 104, 104);
+}
+
+.alert{
+  color:rgb(184, 104, 104);
   text-align: center;
+  font-size: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+/* Header.js */
+nav {
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  width:100%;
+  background: rgb(184, 104, 104);
+  color:rgb(44, 40, 38);
+  font-size: 24px;
+  border: 2px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home,
+.check {
+  width: 50%;
+  height: 100%;
+  text-decoration: none;
+  text-align: center;
+  line-height: 8vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.check{
+  border-left:solid 2px black;
+}
+
+
+/* Checkout.js */
+.checkout{
+  background-color: rgb(65, 61, 58);
+  height:100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 92vh;
+  padding-top: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+.confirm{
+  position: absolute;
+  height: 30px;
+  bottom: 5vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.none{
+  color:rgb(184, 104, 104);
+  text-align: center;
+  font-size: 16px;
+  width: 75%;
 }
